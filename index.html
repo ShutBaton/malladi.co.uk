@@ -232,7 +232,7 @@
                     let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x))
                     + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
                     
-                    let maxConnect = (canvas.width/7) * (canvas.height/7);
+                    let maxConnect = 20000;
                     if (distance < maxConnect) {
                         let opacityValue = 1 - (distance / maxConnect);
                         ctx.strokeStyle = `rgba(56, 189, 248, ${opacityValue * 0.5})`;
